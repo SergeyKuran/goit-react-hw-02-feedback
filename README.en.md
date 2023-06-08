@@ -7,21 +7,21 @@ acquainted and configure additional features
 
 ## Creating a repository by template
 
-Use this GoIT repository as a template for creating a repository
-of your project. To use it just tap the `«Use this template»` button and choose
+Use this GoIT repository as a template for creating a repository of your
+project. To use it just tap the `«Use this template»` button and choose
 `«Create a new repository»` option, as you can see on the image below.
 
 ![Creating repo from a template step 1](./assets/template-step-1.png)
 
-The page for creating a new repository will open on the next step. Fill out
-the Name field and make sure the repository is public, then click
+The page for creating a new repository will open on the next step. Fill out the
+Name field and make sure the repository is public, then click
 `«Create repository from template»` button.
 
 ![Creating repo from a template step 2](./assets/template-step-2.png)
 
-You now have a personal project repository, having a repository-template file 
-and folder structure. After that, you can work with it as you would with any 
-other private repository: clone it on your computer, write code, commit, and 
+You now have a personal project repository, having a repository-template file
+and folder structure. After that, you can work with it as you would with any
+other private repository: clone it on your computer, write code, commit, and
 send it to GitHub.
 
 ## Preparing for coding
@@ -43,7 +43,7 @@ replacing `your_username` and `your_repo_name` with your own, and submit the
 changes to GitHub.
 
 ```json
-"homepage": "https://your_username.github.io/your_repo_name/"
+"homepage": "https://SergeyKuran.github.io/goit-react-hw-02-feedback/",
 ```
 
 Next, you need to go to the settings of the GitHub repository (`Settings` >
