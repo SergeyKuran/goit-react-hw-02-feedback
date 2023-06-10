@@ -9,32 +9,30 @@ import css from './App.module.css';
 
 class App extends Component {
   state = {
-    good: 1,
-    neutral: 2,
-    bad: 3,
+    good: 0,
+    neutral: 0,
+    bad: 0,
   };
 
-  addFeedback(option) {
-    this.setState(prevState => {
-      option.target.textContent = prevState;
+  addFeedback = evt => {
+    const { name } = evt.target;
 
-      return {
-        [option]: prevState[option] + 1,
-      };
-    });
-  }
+    this.setState(prevState => ({
+      [name]: prevState[name] + 1,
+    }));
+  };
 
-  countTotalFeedback() {
+  countTotalFeedback = () => {
     const { good, neutral, bad } = this.state;
     return good + neutral + bad;
-  }
+  };
 
-  countPositiveFeedbackPercentage() {
+  countPositiveFeedbackPercentage = () => {
     const { good } = this.state;
     const percent = Math.round((good / this.countTotalFeedback()) * 100);
 
     return percent;
-  }
+  };
 
   render() {
     const { good, neutral, bad } = this.state;
@@ -49,7 +47,7 @@ class App extends Component {
           />
         </Section>
         <Section title="Statistics">
-          {this.countTotalFeedback > 0 ? (
+          {this.countTotalFeedback() > 0 ? (
             <Statistics
               good={good}
               neutral={neutral}
